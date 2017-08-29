@@ -1,13 +1,6 @@
 from setuptools import setup
-from setuptools.command.develop import develop
 from setuptools.command.install import install
 import subprocess
-
-class PostDevelopCommand(develop):
-    """Post-installation for development mode."""
-    def run(self):
-        subprocess.check_call(['./package_build_scripts/build_library_package'])
-        develop.run(self)
 
 class PostInstallCommand(install):
     """Post-installation for installation mode."""
@@ -29,7 +22,6 @@ setup(
            package_data = {'ccextractor':['_ccextractor.so','ccextractor.py']},
         include_package_data=True,
            cmdclass={
-               'develop': PostDevelopCommand,
                'install':PostInstallCommand,
                },
            )
