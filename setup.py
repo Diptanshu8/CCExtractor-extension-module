@@ -14,12 +14,12 @@ class PostInstallCommand(install):
 
 setup(
            name='ccextractor',
-           version = '0.2',
+           version = '0.3',
            author      = "Diptanshu Jamgade",
            description = "Python Extension module for CCExtractor",
            author_email  = 'diptanshuj@gmail.com',
            url='https://github.com/Diptanshu8/CCExtractor-extension-module',
-           download_url='https://github.com/Diptanshu8/CCExtractor-extension-module/archive/0.2.tar.gz',
+           download_url='https://github.com/Diptanshu8/CCExtractor-extension-module/archive/0.3.tar.gz',
            keywords=['ccextractor'],
            packages = ['ccextractor'],
            package_dir = {'ccextractor':''},
