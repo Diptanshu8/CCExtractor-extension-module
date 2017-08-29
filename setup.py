@@ -5,6 +5,10 @@ import subprocess
 class PostInstallCommand(install):
     """Post-installation for installation mode."""
     def run(self):
+        print "inside install"
+        print "*******"
+        print "*******"
+        print "*******"
         subprocess.check_call(['./package_build_scripts/build_library_package'])
         install.run(self)
 
