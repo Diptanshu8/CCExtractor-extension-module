@@ -25,11 +25,11 @@ setup(
            author      = "Diptanshu Jamgade",
            description = "Python Extension module for CCExtractor",
            author_email  = 'diptanshuj@gmail.com',
-
+           url='https://github.com/Diptanshu8/CCExtractor-extension-module',
+           download_url='https://github.com/Diptanshu8/CCExtractor-extension-module/archive/0.1.tar.gz',
+           keywords=['ccextractor'],
            packages = ['ccextractor'],
-           #package_dir = {'ccextractor':''},
            package_dir = {'ccextractor':''},
-            
            package_data = {'ccextractor':['_ccextractor.so','ccextractor.py']},
         include_package_data=True,
            cmdclass={
@@ -37,16 +37,3 @@ setup(
                'install':PostInstallCommand,
                },
            )
-"""
-
-setup(
-       name='ccextractor',
-       version = '0.1',
-       author      = "Skrill",
-       description = "Testing setup script for generating the module",
-       cmdclass={
-           'develop': PostDevelopCommand,
-           'install':PostInstallCommand,
-           },
-    )
-"""
