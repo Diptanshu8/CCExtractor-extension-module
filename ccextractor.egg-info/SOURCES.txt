@@ -1,5 +1,6 @@
 MANIFEST.in
 __init__.py
+setup.cfg
 setup.py
 ccextractor.egg-info/PKG-INFO
 ccextractor.egg-info/SOURCES.txt
